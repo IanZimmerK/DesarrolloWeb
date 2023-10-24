@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../Imagenes/FondoBlanco.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 120px 0 0 0;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 40px;
+    
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #52099F;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #8311FC;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+}
+
+.header-txt{
+    flex-basis: 50%;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.header-txt h1{
+    font-size: 55px;
+    line-height: 1.2;
+    color: #323337;
+    margin-bottom: 25px;
+}
+
+p{
+    font-size: 17px;
+    color: #323337;
+    margin-bottom: 50px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 45px;
+    background-color: #52099F;
+    color: #f9fafc;
+    font-size: 17px;
+    border-radius: 25px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.btn-1:hover{
+    background-color: #8311FC;
+}
+
+.header-img{
+    flex-basis: 50%;
+}
+
+/*Lo nuevo*/
+.nuevo{
+    padding: 120px 0;
+    position: relative;
+}
+
+.nuevo-content{
+    display: flex;
+    text-align: center;
+}
+
+.nuevo-img{
+    flex-basis: 50%;
+}
+
+.nuevo-img img{
+    width: 500px;
+    border-radius: 30px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.nuevo-txt{
+    flex-basis: 50%;
+}
+
+.nuevo-txt h2{
+    color: #323337;
+}
+
+.nuevo-txt p{
+    color: #323337;
+}
+
+/*Categorias de los productos*/
+
+.categoria{
+    padding: 120px 0;
+    position: relative;
+}
+
+.categoria-content{
+    text-align: center;
+}
+
+h2{
+    font-size: 45px;
+    color: #323337;
+    margin-bottom: 15px;
+}
+ 
+
+.categoria-pl{
+    display: flex;
+    justify-content: space-between;
+}
+
+.categoria-1{
+    text-align: center;
+ flex-basis: calc(33.3%-25px);
+ padding: 0 50px;
+    
+}
+
+.categoria-1 img{
+    
+    width: 250px;
+    margin-top: 15px;
+}
+
+.categoria-1 h3{
+    font-size: 20px;
+}
+
+.categoria-1 p{
+    color: #323337;
+    font-size: 20px;
+}
+
+/*Soporte*/
+
+.servicios{
+    padding: 120px 0;
+    position: relative;
+}
+
+.servicios-content{
+    margin-bottom: 40px;
+    display: flex;
+    text-align: center;
+}
+
+.servicios-img{
+    flex-basis: 50%;
+}
+
+.servicios-img img{
+    width: 500px;
+    border-radius: 30px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.servicios-txt{
+    flex-basis: 50%;
+}
+
+.servicios-txt h2{
+    color: #323337;
+}
+
+.servicios-txt p{
+    color: #323337;
+}
+
+
+/*Pie de pagina*/
+
+.footer{
+    padding: 100px 0;
+    background-image: url(/Imagenes/FondoMorado.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.footer-content{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.link{
+    margin-bottom: 25px;
+    
+}
+
+.link h3{
+    color: #f9fafc;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.link a{
+    color: #f9fafc;
+    display: block;
+    font-size: 17px;
+    margin-bottom: 15px ;
+}
+
+.link a:hover{
+    color: #8311FC;
+}
+
+@media(max-width:991px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-image: url(/Imagenes/FondoMorado.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+        display: none;
+    }
+
+    .menu .navbar ul li a{
+        color: #000;
+    }
+
+    .menu .navbar ul li a:hover{
+        color: #8311FC;
+    }
+
+    .menu .navbar ul li a{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header{
+        min-height: 0vh;
+        padding: 150px 30px 50px 30px;
+    }
+
+    .header-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt{
+        margin: 0 0 30px 0;
+    }
+
+    .header-img{
+        width: 100%;
+    }
+
+    .categoria{
+        padding: 30px;
+    }
+
+    .categoria-pl{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .nuevo{
+        padding: 30px;
+    }
+
+    .nuevo-content{
+        flex-direction: column;
+    }
+
+    .nuevo-img{
+        order: 2;
+    }
+
+    .nuevo-txt{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .servicios{
+        padding: 30px;
+    }
+
+    .servicios-content{
+        flex-direction: column;
+    }
+
+    .servicios-img{
+        order: 2;
+    }
+
+    .servicios-txt{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .link ul li a{
+        color: #f9fafc;
+    }
+
+    .footer .link ul li a:hover{
+        color: #8311FC;
+    }
+}
